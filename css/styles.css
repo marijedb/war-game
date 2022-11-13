@@ -1,0 +1,49 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: url(../images/table.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;   
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.btn {
+    background-color: #ffff00;
+    border: none;
+    cursor: pointer;
+    padding: .6rem 1rem;
+}
+.new-deck {
+    align-self: flex-start;
+    margin-top: .3rem;
+    margin-left: .3rem;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.card-slot {
+    border: 1px solid #000;
+    border-radius: 10px;
+    height: 200px;
+    width: calc(200px * 5 / 7);
+    margin: 0 auto 2rem;
+}
+
+.card {
+    height: 100%;
+    width: 100%
+}
+
+.draw-cards {
+    font-size: 1.3rem;
+}
