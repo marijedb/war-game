@@ -15,6 +15,11 @@ html {
     min-height: 100%;   
 }
 
+
+
+
+/* Containers */
+
 .container {
     display: flex;
     flex-direction: column;
@@ -27,12 +32,36 @@ html {
     align-items: center;
 }
 
+
+
+
+/* Buttons */
+
 .btn {
     background-color: #ffff00;
     border: none;
     cursor: pointer;
     padding: .6rem 1rem;
 }
+
+.new-deck {
+    margin: .3rem .4rem;
+    padding: .5rem 1rem;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.draw-cards {
+    font-size: 1.3rem;
+}
+
+.draw-cards:disabled {
+    cursor: not-allowed;
+}
+
+
+
+
+/* Typography */
 
 .remaining-cards {
     margin: 0;
@@ -43,11 +72,20 @@ html {
     margin: 0;
 }
 
-.new-deck {
-    margin: .3rem .4rem;
-    padding: .5rem 1rem;
-    box-shadow: 1px 1px 3px #000;
+.points {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-top: .5rem;
 }
+
+.points:first-of-type {
+    margin-bottom: .5rem;
+}
+
+
+
+
+/* Card section */
 
 .card-slot {
     border: 1px solid #000;
@@ -64,26 +102,4 @@ html {
 .card {
     height: 100%;
     width: 100%
-}
-
-.points {
-    font-size: 1.7rem;
-    font-weight: bold;
-    margin-top: .5rem;
-}
-
-.points:first-of-type {
-    margin-bottom: .5rem;
-}
-
-.points:first-child {
-    margin-top: 1rem;
-}
-
-.draw-cards {
-    font-size: 1.3rem;
-}
-
-.draw-cards:disabled {
-    cursor: not-allowed;
 }
